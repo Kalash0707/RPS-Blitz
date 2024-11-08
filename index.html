@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="round-info" id="roundInfo">Round 1/5</div>
+        <div class="scoreboard" id="scoreboard">User: 0 | Computer: 0</div>
+        <div class="choices">
+            <button id="rockBtn" class="choice-btn" onclick="makeChoice('Rock')">Rock</button>
+            <button id="paperBtn" class="choice-btn" onclick="makeChoice('Paper')">Paper</button>
+            <button id="scissorsBtn" class="choice-btn" onclick="makeChoice('Scissors')">Scissors</button>
+        </div>
+        <div class="result" id="result">Choose Rock, Paper, or Scissors!</div>
+        <button id="nextRoundBtn" class="btn" onclick="nextRound()" disabled>Next Round</button>
+        <button class="btn" onclick="restartGame()">Restart Game</button>
+    </div>
+
+    <!-- Pop-up structure -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h2 id="popup-title">Result</h2>
+        <p id="popup-message">Message goes here.</p>
+        <button class="close-btn" id="close-popup">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
